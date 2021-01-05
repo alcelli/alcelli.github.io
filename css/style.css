@@ -1,0 +1,306 @@
+body {
+    background-color: rgb(145, 145, 145);
+}
+
+html,body {
+    height: 100%;
+}
+
+.year {
+    background: #dddddd;
+    border-radius: 1ch;
+    padding-inline: 1ch;
+    margin-inline-end: 1ch;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    line-height: 30px;
+    color: black;
+}
+
+.highlight {
+    background: #dddddd;
+    border-radius: 1ch;
+    padding-inline: 1ch;
+    margin-inline-end: 1ch;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    color: black;
+}
+
+.highlight-small {
+    background: #dddddd;
+    border-radius: 1ch;
+    padding-inline: 1ch;
+    margin-inline-end: 1ch;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: black;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    line-height: 34px;
+    list-style-type: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+li a{
+    background: #a5a5a5;
+    border-radius: 1ch;
+    padding-inline: 1ch;
+    margin-inline-end: 1ch;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    line-height: 30px;
+    color: black;
+}
+
+/* Mobile font size adjustment :320px. */
+
+@media (max-width: 812px) {
+    li {
+        line-height: 28px;
+    }
+    li a {
+     font-size: 22px;
+     line-height: 14px;
+    }
+    .year {
+        font-size: 12px;
+        line-height: 14px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+  }
+
+/* Individual scrolling columns */
+/*
+@media (min-width: 768px){
+    #columns {
+        margin: 0;
+      overflow: hidden;
+      height:100%;
+    }
+    #leftcolumn {
+      position: absolute;
+      top: 0px;
+      bottom: 0;
+      left: 0;
+      overflow-y: scroll; 
+    }
+    #rightcolumn {
+      position: absolute;
+      top: 0px;
+      bottom: 0;
+      left: 15%;
+      width: 15%;
+      overflow-y: scroll; 
+    }
+}
+*/
+
+li a:hover{
+    background: rgb(145, 145, 145);
+    text-decoration: none;
+    color: black;
+    /*background: lightgray;*/
+    border-radius: 1ch;
+    padding-inline: 1ch;
+    margin-inline-end: 1ch;
+    -o-transition:color .2s ease-out, background .2s ease-in;
+    -ms-transition:color .2s ease-out, background .2s ease-in;
+    -moz-transition:color .2s ease-out, background .2s ease-in;
+    -webkit-transition:color .2s ease-out, background .2s ease-in;
+    /* ...and now override with proper CSS property */
+    transition:color .2s ease-out, background .2s ease-in;
+}
+
+li a:active {
+    background: rgb(253, 14, 66);
+    color: rgb(194, 194, 194);
+    -o-transition:color 0s ease-out, background 0s ease-in;
+    -ms-transition:color 0s ease-out, background 0s ease-in;
+    -moz-transition:color 0s ease-out, background 0s ease-in;
+    -webkit-transition:color 0s ease-out, background 0s ease-in;
+    /* ...and now override with proper CSS property */
+    transition:color 0s ease-out, background 0s ease-in;
+}
+
+/*
+li::before {
+    content: "::be";
+    background: lightgray;
+    border-radius: 1ch;
+    padding-inline: 1ch;
+    margin-inline-end: 1ch;
+  }
+*/
+
+/* projects list page in home page */
+
+.menu {
+    background-color: rgb(194, 194, 194);
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 1%;
+    /*border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    box-shadow: 3px 3px 10px 2px #333333;
+    -webkit-box-shadow: 3px 3px 10px 2px #333333;
+    -moz-box-shadow: 3px 3px 10px 2px #333333;*/
+}
+
+/* text for individual projects */
+.textbox {
+    background-color: rgb(194, 194, 194);
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 4%;
+}
+
+.titlebox {
+    background-color: rgb(194, 194, 194);
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 4%;
+}
+
+#projectimage {
+    margin-top: 50px;
+}
+
+/* The navigation bar */
+#navbar {
+    overflow: hidden;
+    background-color: rgb(194, 194, 194);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-width: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    z-index: 1;
+  }
+  
+  /* Links inside the navbar */
+  #navbar a {
+    float: left;
+    display: block;
+    /*color: black;
+    text-decoration: underline;*/
+    background: #a5a5a5;
+    text-decoration: none;
+    color: black;
+    /*background: lightgray;*/
+    border-radius: 1ch;
+    padding-inline: 1ch;
+    margin-inline-end: 1ch;
+  }
+
+#navbar a:hover {
+    background: rgb(145, 145, 145);
+    text-decoration: none;
+    color: black;
+    /*background: lightgray;*/
+    border-radius: 1ch;
+    padding-inline: 1ch;
+    margin-inline-end: 1ch;
+    -o-transition:color .2s ease-out, background .2s ease-in;
+    -ms-transition:color .2s ease-out, background .2s ease-in;
+    -moz-transition:color .2s ease-out, background .2s ease-in;
+    -webkit-transition:color .2s ease-out, background .2s ease-in;
+    /* ...and now override with proper CSS property */
+    transition:color .2s ease-out, background .2s ease-in;
+}
+
+#navbar a:active {
+    background: rgb(253, 14, 66);
+    color: rgb(194, 194, 194);
+}
+
+  /* Links inside the navbar aligned to the right */
+#menuwords {
+    text-align: right;
+}
+
+#menuwords a {
+    float: right;
+}
+
+img {
+    pointer-events: none;
+}
+
+/* TYPEFACES */
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    line-height: 30px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+h2 a {
+    float: left;
+    display: block;
+    /*color: black;
+    text-decoration: underline;*/
+    background: #a5a5a5;
+    text-decoration: none;
+    color: black;
+    /*background: lightgray;*/
+    border-radius: 1ch;
+    padding-inline: 1ch;
+    margin-inline-end: 1ch;
+}
+
+h2 a:hover {
+    background: rgb(145, 145, 145);
+    text-decoration: none;
+    color: black;
+    /*background: lightgray;*/
+    border-radius: 1ch;
+    padding-inline: 1ch;
+    margin-inline-end: 1ch;
+    -o-transition:color .2s ease-out, background .2s ease-in;
+    -ms-transition:color .2s ease-out, background .2s ease-in;
+    -moz-transition:color .2s ease-out, background .2s ease-in;
+    -webkit-transition:color .2s ease-out, background .2s ease-in;
+    /* ...and now override with proper CSS property */
+    transition:color .2s ease-out, background .2s ease-in;
+}
+
