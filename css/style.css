@@ -213,6 +213,15 @@ li::before {
     -moz-box-shadow: 3px 3px 10px 2px #333333;*/
 }
 
+.text-about {
+    background-color: rgb(194, 194, 194);
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 1%;
+}
+
 /* text for individual projects */
 .textbox {
     background-color: rgb(194, 194, 194);
