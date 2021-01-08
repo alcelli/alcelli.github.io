@@ -202,9 +202,9 @@ li::before {
     margin-left: 0%;
     margin-right: 0%;
     padding: 1%;
-    white-space: nowrap;
+    /*white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis;*/
     /*border-style: solid;
     border-color: black;
     border-width: 2px;
