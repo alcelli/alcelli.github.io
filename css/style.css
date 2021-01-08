@@ -199,9 +199,12 @@ li::before {
     background-color: rgb(194, 194, 194);
     border-radius: 25px;
     margin-top: 50px;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 0%;
+    margin-right: 0%;
     padding: 1%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     /*border-style: solid;
     border-color: black;
     border-width: 2px;
@@ -215,8 +218,8 @@ li::before {
     background-color: rgb(194, 194, 194);
     border-radius: 25px;
     margin-top: 20px;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 0%;
+    margin-right: 0%;
     padding: 4%;
 }
 
@@ -224,8 +227,8 @@ li::before {
     background-color: rgb(194, 194, 194);
     border-radius: 25px;
     margin-top: 50px;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 0%;
+    margin-right: 0%;
     padding: 4%;
 }
 
