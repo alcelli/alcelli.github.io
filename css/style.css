@@ -1,5 +1,8 @@
 body {
-    background-color: rgb(145, 145, 145);
+    /*background-color: rgb(145, 145, 145);*/
+    background: rgb(62,62,62);
+    background: linear-gradient(0deg, rgba(62,62,62,1) 0%, rgba(145,145,145,1) 100%);  
+    background-attachment: fixed; 
 }
 
 html,body {
@@ -80,6 +83,28 @@ li a{
         line-height: 14px;
         display: inline-block;
         vertical-align: middle;
+    }
+  }
+
+  @media (max-width: 600px) {
+    li {
+        line-height: 26px;
+    }
+    li a {
+     font-size: 18px;
+     line-height: 14px;
+    }
+    h2 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    h2 a {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .highlight {
+        font-size: 18px;
+        line-height: 22px;
     }
   }
 
