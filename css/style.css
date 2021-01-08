@@ -14,10 +14,13 @@ html,body {
     border-radius: 1ch;
     padding-inline: 1ch;
     margin-inline-end: 1ch;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
     font-size: 26px;
     line-height: 30px;
     color: black;
+    text-shadow: 0px 0px 3px rgba(80, 80, 80, 0.473);
+    box-shadow: 0px 0px 3px rgba(228, 228, 228, 0.692);
 }
 
 .highlight {
@@ -25,10 +28,13 @@ html,body {
     border-radius: 1ch;
     padding-inline: 1ch;
     margin-inline-end: 1ch;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
     font-size: 20px;
     line-height: 24px;
     color: black;
+    text-shadow: 0px 0px 3px rgba(80, 80, 80, 0.473);
+    box-shadow: 0px 0px 3px rgba(228, 228, 228, 0.692);
 }
 
 .highlight-small {
@@ -36,16 +42,20 @@ html,body {
     border-radius: 1ch;
     padding-inline: 1ch;
     margin-inline-end: 1ch;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
     font-size: 16px;
     line-height: 20px;
     color: black;
+    text-shadow: 0px 0px 3px rgba(80, 80, 80, 0.473);
+    box-shadow: 0px 0px 3px rgba(228, 228, 228, 0.692);
 }
 
 li {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
     font-size: 30px;
-    line-height: 34px;
+    line-height: 36px;
     list-style-type: none;
 }
 
@@ -62,10 +72,13 @@ li a{
     border-radius: 1ch;
     padding-inline: 1ch;
     margin-inline-end: 1ch;
-    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 26px;
     line-height: 30px;
     color: black;
+    text-shadow: 0px 0px 3px rgba(80, 80, 80, 0.473);
+    box-shadow: 0px 0px 3px rgba(83, 83, 83, 0.562);
 }
 
 /* Mobile font size adjustment :320px. */
@@ -75,7 +88,7 @@ li a{
         line-height: 28px;
     }
     li a {
-     font-size: 22px;
+     font-size: 20px;
      line-height: 14px;
     }
     .year {
@@ -86,25 +99,34 @@ li a{
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 667px) {
     li {
+        font-weight: normal;
         line-height: 26px;
     }
     li a {
+        font-weight: normal;
      font-size: 18px;
      line-height: 14px;
     }
     h2 {
+        font-weight: normal;
         font-size: 18px;
         line-height: 22px;
     }
     h2 a {
+        font-weight: normal;
         font-size: 18px;
         line-height: 22px;
     }
     .highlight {
+        font-weight: normal;
         font-size: 18px;
         line-height: 22px;
+    }
+    .linksbio {
+        font-size: 18px;
+        line-height: 26px;
     }
   }
 
@@ -225,7 +247,8 @@ li::before {
     border-bottom-color: black;
     border-bottom-style: solid;
     border-width: 1px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
     font-size: 16px;
     line-height: 20px;
     z-index: 1;
@@ -237,19 +260,24 @@ li::before {
     display: block;
     /*color: black;
     text-decoration: underline;*/
-    background: #a5a5a5;
+    /*background: #a5a5a5;*/
+    background: rgb(253, 14, 66);
     text-decoration: none;
-    color: black;
+    /*color: black;*/
+    color: rgb(194, 194, 194);
     /*background: lightgray;*/
     border-radius: 1ch;
     padding-inline: 1ch;
     margin-inline-end: 1ch;
+    box-shadow: 0px 0px 3px rgb(253, 14, 66);
   }
 
 #navbar a:hover {
-    background: rgb(145, 145, 145);
+    /*background: rgb(145, 145, 145);*/
+    background: rgb(224, 14, 60);
     text-decoration: none;
-    color: black;
+    color: rgb(194, 194, 194);
+    /*color: black;*/
     /*background: lightgray;*/
     border-radius: 1ch;
     padding-inline: 1ch;
@@ -260,11 +288,13 @@ li::before {
     -webkit-transition:color .2s ease-out, background .2s ease-in;
     /* ...and now override with proper CSS property */
     transition:color .2s ease-out, background .2s ease-in;
+    box-shadow: 0px 0px 3px rgb(224, 14, 60);
 }
 
 #navbar a:active {
-    background: rgb(253, 14, 66);
+    background: rgb(179, 12, 48);
     color: rgb(194, 194, 194);
+    box-shadow: 0px 0px 3px rgb(179, 12, 48);
 }
 
   /* Links inside the navbar aligned to the right */
@@ -283,18 +313,21 @@ img {
 /* TYPEFACES */
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
     font-size: 26px;
     line-height: 30px;
 }
 
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
     font-size: 16px;
 }
 
 h2 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
     font-size: 20px;
     line-height: 24px;
 }
@@ -311,6 +344,8 @@ h2 a {
     border-radius: 1ch;
     padding-inline: 1ch;
     margin-inline-end: 1ch;
+    text-shadow: 0px 0px 3px rgba(80, 80, 80, 0.473);
+    box-shadow: 0px 0px 3px rgba(83, 83, 83, 0.562);
 }
 
 h2 a:hover {
