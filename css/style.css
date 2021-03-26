@@ -332,6 +332,15 @@ p {
     line-height: 30px;
 }
 
+p a {
+    color: rgb(253, 14, 66);
+}
+
+p a:hover {
+    color: rgb(253, 14, 66);
+    text-shadow: 0px 0px 3px rgba(253, 14, 66, 0.6);
+}
+
 h1 {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: normal;
