@@ -423,5 +423,5 @@ h3{
 
 @font-face {
     font-family: Syne-mono;
-    src: url(../font/Syne-Mono.ttf);
+    src: url(../font/Syne-Mono.ttf) format('truetype');
 }
