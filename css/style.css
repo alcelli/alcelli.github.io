@@ -1,427 +1,227 @@
 body {
-    /*background-color: rgb(145, 145, 145);*/
-    /*background-color: rgb(168, 168, 168);*/
-    
-    /*background: rgb(62,62,62);
-    background: linear-gradient(0deg, rgb(139, 139, 139) 0%, rgb(180, 180, 180) 100%);
-    background-attachment: fixed;
-    */
-    
-    background-color: #d6d6d6;
+    background: rgb(204, 204, 204);
+    font-family: altehaas;
+    /* max-width: 1280px; */
+    /* border: 1px solid red;
+    margin: auto; */
 }
 
-html,body {
-    height: 100%;
+.content {
+    max-width: 1280px;
+    margin: auto;
 }
 
-.year {
-    background: #dddddd;
-    border-radius: 1ch;
-    padding-inline: 1ch;
-    margin-inline-end: 1ch;
-    /* font-family: Helvetica, Arial, sans-serif; */
-    font-family: Syne-mono;
-    font-weight: normal;
-    font-size: 26px;
-    line-height: 30px;
-    color: black;
-    text-shadow: 0px 0px 3px rgba(80, 80, 80, 0.473);
-    box-shadow: 0px 0px 3px rgba(228, 228, 228, 0.692);
-}
-
-.highlight {
-    background: #dddddd;
-    border-radius: 1ch;
-    padding-inline: 1ch;
-    margin-inline-end: 1ch;
-    /* font-family: Helvetica, Arial, sans-serif; */
-    font-family: Syne-mono;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 24px;
-    color: black;
-    text-shadow: 0px 0px 3px rgba(80, 80, 80, 0.473);
-    box-shadow: 0px 0px 3px rgba(228, 228, 228, 0.692);
-}
-
-.highlight-small {
-    background: #dddddd;
-    border-radius: 1ch;
-    padding-inline: 1ch;
-    margin-inline-end: 1ch;
-    /* font-family: Helvetica, Arial, sans-serif; */
-    font-family: Syne-mono;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    color: black;
-    text-shadow: 0px 0px 3px rgba(80, 80, 80, 0.473);
-    box-shadow: 0px 0px 3px rgba(228, 228, 228, 0.692);
-}
-
-li {
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 36px;
-    list-style-type: none;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    margin-left: 10px;
-    margin-bottom: 20px;
-}
-
-li a{
-    background: #b1b1b1;
-    border-radius: 1ch;
-    padding-inline: 1ch;
-    margin-inline-end: 1ch;
-    font-weight: normal;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 26px;
-    /* line-height: 30px; */
-    color: black;
-    text-shadow: 0px 0px 3px rgba(80, 80, 80, 0.473);
-    box-shadow: 0px 0px 3px rgba(83, 83, 83, 0.562);
-}
-
-/* Mobile font size adjustment :320px. */
-
-@media (max-width: 812px) {
-    li {
-        line-height: 28px;
-    }
-    li a {
-     font-size: 20px;
-     line-height: 14px;
-    }
-    .year {
-        font-size: 12px;
-        line-height: 14px;
-        display: inline-block;
-        vertical-align: middle;
-    }
-  }
-
-  @media (max-width: 667px) {
-    li {
-        font-weight: normal;
-        line-height: 26px;
-    }
-    li a {
-        font-weight: normal;
-     font-size: 18px;
-     line-height: 14px;
-    }
-    h2 {
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 22px;
-    }
-    h2 a {
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 22px;
-    }
-    .highlight {
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 22px;
-    }
-    .linksbio {
-        font-size: 18px;
-        line-height: 26px;
-    }
-  }
-
-/* Individual scrolling columns */
-/*
-@media (min-width: 768px){
-    #columns {
-        margin: 0;
-      overflow: hidden;
-      height:100%;
-    }
-    #leftcolumn {
-      position: absolute;
-      top: 0px;
-      bottom: 0;
-      left: 0;
-      overflow-y: scroll; 
-    }
-    #rightcolumn {
-      position: absolute;
-      top: 0px;
-      bottom: 0;
-      left: 15%;
-      width: 15%;
-      overflow-y: scroll; 
-    }
-}
-*/
-
-li a:hover{
-    background: rgb(155, 155, 155);
-    text-decoration: none;
-    color: black;
-    /*background: lightgray;*/
-    border-radius: 1ch;
-    padding-inline: 1ch;
-    margin-inline-end: 1ch;
-    -o-transition:color .15s ease-out, background .15s ease-in;
-    -ms-transition:color .15s ease-out, background .15s ease-in;
-    -moz-transition:color .15s ease-out, background .15s ease-in;
-    -webkit-transition:color .15s ease-out, background .15s ease-in;
-    /* ...and now override with proper CSS property */
-    transition:color .2s ease-out, background .2s ease-in;
-}
-
-li a:active {
-    background: rgb(253, 14, 66);
-    color: rgb(194, 194, 194);
-    -o-transition:color 0s ease-out, background 0s ease-in;
-    -ms-transition:color 0s ease-out, background 0s ease-in;
-    -moz-transition:color 0s ease-out, background 0s ease-in;
-    -webkit-transition:color 0s ease-out, background 0s ease-in;
-    /* ...and now override with proper CSS property */
-    transition:color 0s ease-out, background 0s ease-in;
-}
-
-/*
-li::before {
-    content: "::be";
-    background: lightgray;
-    border-radius: 1ch;
-    padding-inline: 1ch;
-    margin-inline-end: 1ch;
-  }
-*/
-
-/* projects list page in home page */
-
-.menu {
-    background-color: rgb(199, 199, 199);
-    border-radius: 25px;
-    margin-top: 50px;
-    margin-left: 0%;
-    margin-right: 0%;
-    padding: 1%;
-    /* ---OUTER SHADOW--- */
-    /* box-shadow: 0px 0px 8px  #696969;
-    -webkit-box-shadow: 0px 0px 8px #696969;
-    -moz-box-shadow: 0px 0px 8px #696969; */
-    /* ---INNER SHADOW--- */
-    box-shadow: 0px 0px 6px  #696969 inset;
-    -webkit-box-shadow: 0px 0px 6px #696969 inset;
-    -moz-box-shadow: 0px 0px 6px #696969 inset;
-    /*white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;*/
-    /*border-style: solid;
-    border-color: black;
-    border-width: 2px;
-    box-shadow: 3px 3px 10px 2px #333333;
-    -webkit-box-shadow: 3px 3px 10px 2px #333333;
-    -moz-box-shadow: 3px 3px 10px 2px #333333;*/
-}
-
-.text-about {
-    background-color: rgb(194, 194, 194);
-    border-radius: 25px;
-    margin-top: 50px;
-    margin-left: 15px;
-    margin-right: 15px;
-    padding: 1%;
-    /* ---INNER SHADOW--- */
-    box-shadow: 0px 0px 6px  #696969 inset;
-    -webkit-box-shadow: 0px 0px 6px #696969 inset;
-    -moz-box-shadow: 0px 0px 6px #696969 inset;
-}
-
-/* text for individual projects */
-.textbox {
-    background-color: rgb(194, 194, 194);
-    border-radius: 25px;
-    margin-top: 20px;
-    margin-left: 0%;
-    margin-right: 0%;
-    padding: 4%;
-    /* ---INNER SHADOW--- */
-    box-shadow: 0px 0px 6px  #696969 inset;
-    -webkit-box-shadow: 0px 0px 6px #696969 inset;
-    -moz-box-shadow: 0px 0px 6px #696969 inset;
-}
-
-.titlebox {
-    background-color: rgb(194, 194, 194);
-    border-radius: 25px;
-    margin-top: 50px;
-    margin-left: 0%;
-    margin-right: 0%;
-    padding: 4%;
-    /* ---INNER SHADOW--- */
-    box-shadow: 0px 0px 6px  #696969 inset;
-    -webkit-box-shadow: 0px 0px 6px #696969 inset;
-    -moz-box-shadow: 0px 0px 6px #696969 inset;
-}
-
-#projectimage {
-    margin-top: 50px;
-}
-
-/* The navigation bar */
-#navbar {
-    overflow: hidden;
-    /*background-color: rgb(194, 194, 194);*/
-    position: fixed; /* Set the navbar to fixed position */
-    top: 1%; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    /*border-bottom-color: black;*/
-    /*border-bottom-style: solid;*/
-    /*border-width: 1px;*/
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    z-index: 1;
-  }
-  
-  /* Links inside the navbar */
-  #navbar a {
-    float: left;
-    display: block;
-    /*color: black;
-    text-decoration: underline;*/
-    /*background: #a5a5a5;*/
-    background: rgb(253, 14, 66);
-    text-decoration: none;
-    /*color: black;*/
-    color: #d6d6d6;
-    /*background: lightgray;*/
-    border-radius: 1ch;
-    padding-inline: 1ch;
-    margin-inline-end: 1ch;
-    box-shadow: 0px 0px 3px rgb(253, 14, 66);
-  }
-
-#navbar a:hover {
-    /*background: rgb(145, 145, 145);*/
-    background: rgb(224, 14, 60);
-    text-decoration: none;
-    color: #d6d6d6;
-    /*color: black;*/
-    /*background: lightgray;*/
-    border-radius: 1ch;
-    padding-inline: 1ch;
-    margin-inline-end: 1ch;
-    -o-transition:color .2s ease-out, background .2s ease-in;
-    -ms-transition:color .2s ease-out, background .2s ease-in;
-    -moz-transition:color .2s ease-out, background .2s ease-in;
-    -webkit-transition:color .2s ease-out, background .2s ease-in;
-    /* ...and now override with proper CSS property */
-    transition:color .2s ease-out, background .2s ease-in;
-    box-shadow: 0px 0px 3px rgb(224, 14, 60);
-}
-
-#navbar a:active {
-    background: rgb(179, 12, 48);
-    color: #d6d6d6;
-    box-shadow: 0px 0px 3px rgb(179, 12, 48);
-}
-
-  /* Links inside the navbar aligned to the right */
-#menuwords {
-    text-align: right;
-}
-
-#menuwords a {
-    float: right;
+.homecontent {
+    max-width: 1280px;
 }
 
 img {
     pointer-events: none;
 }
 
-/* TYPEFACES */
+* {
+    box-sizing: border-box;
+  }
+
+/* FONT SELECTION */
+
+@font-face {
+    font-family: altehaas;
+    src: url(../font/AlteHaasGroteskRegular.ttf);
+}
 
 p {
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: normal;
-    font-size: 26px;
-    line-height: 30px;
-}
-
-p a {
-    color: rgb(253, 14, 66);
-}
-
-p a:hover {
-    color: rgb(253, 14, 66);
-    text-shadow: 0px 0px 3px rgba(253, 14, 66, 0.6);
+    font-size: 15px;
 }
 
 h1 {
-    font-family: Helvetica, Arial, sans-serif;
+    font-size: 32px;
     font-weight: normal;
-    font-size: 16px;
 }
 
 h2 {
-    font-family: Helvetica, Arial, sans-serif;
+    font-size: 22px;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 24px;
 }
 
-h2 a {
-    float: left;
+a {
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    color: transparent;
+    text-shadow: 0 0 7px black;
+    transition: 0.20s;
+    -webkit-transition: 0.20s;
+    -moz-transition: 0.20s;
+    -ms-transition: 0.20s;
+    -o-transition: 0.20s;
+}
+
+/* MAKE YEAR BLURRY */
+
+/* a:hover span {
+    border-color: transparent;
+    background: transparent;
+    border: transparent 0px;
+    box-shadow: 0 0 7px black;
+} */
+
+mark {
+    background-color: rgb(255, 168, 37);
+}
+
+.year {
+    border: black solid 2px;
+    border-radius: 2ch;
+    padding-inline: 1ch;
+    margin-inline-end: 1ch;
+    font-size: 22px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.highlight {
+    border: black solid 2px;
+    border-radius: 2ch;
+    padding-inline: .8ch;
+    margin-inline-end: .8ch;
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.highlight-small {
+    border: black solid 1px;
+    border-radius: 2ch;
+    padding-inline: .8ch;
+    margin-inline-end: .8ch;
+    font-size: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.circle {
+    border: black solid 2px;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding-right: 9px;
+    padding-left: 9px;
+    text-align: center;
+    width: 45px;
+    line-height: 45px;
+}
+
+#projects-lg {
+    margin-top: -10px;
+    display: inline-block;
+}
+
+#projects-sm {
+    display: none;
+}
+
+#contacts {
+    margin-top: -5px;
+}
+
+p.abouttext {
+    max-width: 800px;
+}
+
+#titlebox {
+    text-align: center;
+    margin-top: 45px;
+}
+
+#textbox {
+    text-align: justify;
+    text-justify: inter-word;
+    padding-left: 9em;
+    padding-right: 9em;
+}
+
+#header {
+    position: fixed;
+    overflow: hidden;
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+    margin-top: -7px;
+}
+
+
+/* COLUMNS FOR IMAGES */
+
+.row {
+    display: flex;
+    display: -ms-flexbox; /* IE10 */
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap; /* IE10 */
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 50%;
+    -ms-flex: 50%; /* IE10 */
+    max-width: 50%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    #textbox {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    #textbox {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+
+    #projects-lg {
+        display: none;
+    }
+    
+    #projects-sm {
+        display: inline-block;
+    }
+
+    h1 {
+        font-size: 26px;
+        font-weight: normal;
+    }
+  }
+
+/* img {
     display: block;
-    /*color: black;
-    text-decoration: underline;*/
-    background: #a5a5a5;
-    text-decoration: none;
-    color: black;
-    /*background: lightgray;*/
-    border-radius: 1ch;
-    padding-inline: 1ch;
-    margin-inline-end: 1ch;
-    text-shadow: 0px 0px 3px rgba(80, 80, 80, 0.473);
-    box-shadow: 0px 0px 3px rgba(83, 83, 83, 0.562);
-}
-
-h2 a:hover {
-    background: rgb(145, 145, 145);
-    text-decoration: none;
-    color: black;
-    /*background: lightgray;*/
-    border-radius: 1ch;
-    padding-inline: 1ch;
-    margin-inline-end: 1ch;
-    -o-transition:color .2s ease-out, background .2s ease-in;
-    -ms-transition:color .2s ease-out, background .2s ease-in;
-    -moz-transition:color .2s ease-out, background .2s ease-in;
-    -webkit-transition:color .2s ease-out, background .2s ease-in;
-    /* ...and now override with proper CSS property */
-    transition:color .2s ease-out, background .2s ease-in;
-}
-
-h3{
-    color: rgb(253, 14, 66); 
-    text-shadow: 0px 0px 4px rgb(253, 14, 66, 0.5); 
-    font-family: Syne-mono; 
-    font-size: 32px;
-    line-height: 30px;
-}
-
-@font-face {
-    font-family: Syne-mono;
-    src: url(../font/Syne-Mono.ttf) format('truetype');
-}
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+} */
