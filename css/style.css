@@ -36,22 +36,45 @@ img {
 }
 
 p {
-    font-size: 15px;
+    font-size: 16px;
+    font-family: source-serif-pro, serif;
+    font-weight: 400;
+    font-style: normal;
+    /* text-indent: 40px; */
+}
+
+p a {
+    font-weight: 600;
+    font-style: italic;
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: normal;
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 16px;
+    font-style: normal;
     font-weight: normal;
+}
+
+h2 ul {
+    list-style-type:none;
+    list-style-position: inside;
+    padding-top: 0.3em;
+    font-weight: 400;
+}
+
+h2 li::before {
+    content: "❋";
+    padding-right: 8px;
 }
 
 h3 {
     font-size: 11px;
     font-weight: normal;
+    line-height: 14px;
 }
 
 a {
@@ -75,48 +98,38 @@ a:hover {
     -o-transition: 0.20s;
 }
 
-/* MAKE YEAR BLURRY */
-
-/* a:hover span {
-    border-color: transparent;
-    background: transparent;
-    border: transparent 0px;
-    box-shadow: 0 0 7px black;
-} */
-
 mark {
-    background-color: rgb(255, 168, 37);
+    background-color: rgb(161, 146, 198);
 }
 
 .year {
-    border: black solid 2px;
+    border: black solid 1.5px;
     border-radius: 2ch;
     padding-inline: 1ch;
     margin-inline-end: 1ch;
-    font-size: 22px;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.highlight {
-    border: black solid 2px;
-    border-radius: 2ch;
-    padding-inline: .8ch;
-    margin-inline-end: .8ch;
     font-size: 18px;
     display: inline-block;
     vertical-align: middle;
 }
 
-.highlight-small {
+.highlight {
     border: black solid 1px;
     border-radius: 2ch;
     padding-inline: .8ch;
     margin-inline-end: .8ch;
-    font-size: 15px;
     display: inline-block;
     vertical-align: middle;
 }
+
+/* .highlight-small {
+    border: black solid 1px;
+    border-radius: 2ch;
+    padding-inline: .7ch;
+    margin-inline-end: .8ch;
+    font-size: 15px;
+    display: inline-block;
+    vertical-align: middle;
+} */
 
 .circle {
     border: black solid 2px;
@@ -149,15 +162,29 @@ p.abouttext {
 }
 
 #titlebox {
-    text-align: center;
-    margin-top: 45px;
+    margin-top: 50px;
+    text-align: left;
+    padding-left: 9%;
+    padding-right: 20%;
+}
+
+#text-info {
+    padding-left: 9%;
+    padding-right: 20%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#text-credits {
+    padding-left: 9%;
+    padding-right: 20%;
 }
 
 #textbox {
     text-align: justify;
     text-justify: inter-word;
-    padding-left: 9em;
-    padding-right: 9em;
+    padding-left: 9%;
+    padding-right: 20%;
 }
 
 #header {
@@ -166,6 +193,27 @@ p.abouttext {
     top: 0; /* Position the navbar at the top of the page */
     width: 100%;
     margin-top: -7px;
+    margin-right: 4%;
+}
+
+hr.style-one {
+    border: 0;
+    height: 1px;
+    border-top: 1px solid #333;
+    /* border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.456); */
+    /* width: 83%; */
+    margin-left: 9%;
+    margin-right: 20%;
+}
+
+.col-3 {
+    width: 33%;
+}
+
+.col-8 {
+    width: 12.5%;
+    padding: 0.4%;
 }
 
 
@@ -193,24 +241,66 @@ p.abouttext {
     width: 100%;
   }
   
-  /* Responsive layout - makes a two column-layout instead of four columns */
+
+/* RESPONSIVE LAYOUT FOR MOBILE  */
+/* --------------- */
+/* Responsive layout - makes a two column-layout instead of four columns */
+
   @media screen and (max-width: 800px) {
+    
+    #titlebox {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    
+    #text-info {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    
+    #text-credits {
+        padding-left: 1%;
+        padding-right: 1%;
+    }    
+
     #textbox {
-        padding-left: 2em;
-        padding-right: 2em;
+        padding-left: 1%;
+        padding-right: 1%;
     }
     .column {
       flex: 50%;
       max-width: 50%;
     }
+
+    hr.style-one {
+        margin-left: 1%;
+        margin-right: 1%;
+    }
   }
   
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
-    #textbox {
-        padding-left: 1em;
-        padding-right: 1em;
+
+    #titlebox {
+        padding-left: 1%;
+        padding-right: 1%;
     }
+    
+    #text-info {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    
+    #text-credits {
+        padding-left: 1%;
+        padding-right: 1%;
+    } 
+
+    #textbox {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
     .column {
       flex: 100%;
       max-width: 100%;
@@ -224,15 +314,12 @@ p.abouttext {
         display: inline-block;
     }
 
-    h1 {
-        font-size: 26px;
-        font-weight: normal;
+    hr.style-one {
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    h5 li {
+        display: inline;
     }
   }
-
-/* img {
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-} */
